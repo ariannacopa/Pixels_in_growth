@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Archive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="intro">
+    <h1>Pixels in growth</h1>
+    <div class="button-group">
+      <button id="show-calendar-btn">Show the calendar</button>
+      <button id="show-timeline-btn">Look at the timeline</button>
+    </div>
+    <p class="subtitle">5768 photos taken from 2022 to 2025</p>
+  </div>
+
+  <div id="calendar-view">
+    <div class="calendar-container">
+      <div class="date-labels">
+        <!-- Year and month labels will be inserted here by JavaScript -->
+      </div>
+      <div id="calendar">
+        <!-- Calendar content -->
+      </div>
+    </div>
+  </div>
+
+  <div id="timeline-view" style="display: none;">
+    <div id="timeline"></div>
+    <div id="timeline-controls">
+      <div class="filter-group">
+        <label>Photos per day:</label>
+        <select id="photos-filter">
+          <option value="all">All</option>
+          <option value="1">1 photo</option>
+          <option value="2">2 photos</option>
+          <option value="3+">3+ photos</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
