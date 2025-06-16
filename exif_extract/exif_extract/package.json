@@ -1,0 +1,16 @@
+{
+  "name": "exif_extract",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Estrazione di metadati EXIF dalle immagini",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "exifr": "^7.1.3"
+  }
+}

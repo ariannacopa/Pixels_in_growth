@@ -1,0 +1,15 @@
+{
+  "name": "color_extract",
+  "version": "1.0",
+  "description": "Estrazione di colori dominanti dalle immagini",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "get-image-colors": "^4.0.1",
+    "sharp": "^0.33.4"
+  }
+}
