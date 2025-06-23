@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Archive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="intro">
+    <h1>Pixels in growth</h1>
+    <div class="button-group">
+      <button id="show-calendar-btn">Show the calendar</button>
+      <button id="show-timeline-btn">Look at the timeline</button>
+    </div>
+    <p class="subtitle">0 photos taken from 2022 to 2025</p>
+  </div>
+
+  <div class="header-mode" style="display: none;">
+    <div class="header-content">
+      <h1>Pixels in growth</h1>
+      <p class="subtitle">0 photos taken from 2022 to 2025</p>
+    </div>
+    <div id="header-message" class="header-text">
+      The project is a map of my continuity: over time I started taking pictures more and more. <br>
+      Each day is a square, if there is color, I took one or more pictures with my phone, and the color shows the visual average of those images.
+    </div>
+    <div class="button-group">
+      <div class="filter-wrapper">
+        <button id="toggle-filters-btn">Filter</button>
+        <div class="filter-container">
+          <div class="close-filters-x" id="close-filters-x">✕</div>
+          <div class="filter-group">
+            <span class="filter-label">Filter by month</span>
+            <div id="month-filters">
+              <button class="filter-button" data-filter-type="month" data-value="1">January</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">Filter by year</span>
+            <div id="year-filters">
+              <button class="filter-button" data-filter-type="year" data-value="2025">2025</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">Filter by weekday</span>
+            <div id="weekday-filters">
+              <button class="filter-button" data-filter-type="weekday" data-value="1">Monday</button>
+            </div>
+          </div>
+          <div class="filter-section no-filter-section">
+            <button id="clear-filters-btn" class="filter-button no-filter-button">Clear all</button>
+          </div>
+        </div>
+      </div>
+      <button id="header-timeline-btn">Look at the timeline</button>
+
+    </div>
+  </div>
+
+  <div id="calendar-view">
+    <div class="calendar-container">
+      <div class="date-labels" id="date-labels"></div>
+      <div id="calendar"></div>
+    </div>
+  </div>
+
+  <div id="timeline-view" style="display: none;">
+    <div id="timeline">
+      <div class="timeline-day" data-month="1" data-year="2025" data-weekday="1">
+        <!-- content -->
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+  <!-- Modal per mostrare le foto -->
+<div id="photo-modal" class="modal hidden">
+  <div class="modal-content carousel">
+    <button class="carousel-btn prev">&lt;</button>
+    <img id="main-photo" src="" alt="Foto del giorno">
+    <button class="carousel-btn next">&gt;</button>
+    <span class="modal-close">&times;</span>
+  </div>
+</div>
+</body>
+</html>
