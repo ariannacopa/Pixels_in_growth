@@ -4,7 +4,7 @@ Docenti: A. Gysin, G. Profeta
 
 Elaborato 1: Me, Myself & AI  
 
-#Pixels in growth
+Pixels in growth
 Autore: Arianna Copa  
 [Pixels in growth] (https://ariannacopa.github.io/Pixels_in_growth/)
 
